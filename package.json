@@ -6,9 +6,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "leaflet": "^1.6.0",
+    "leaflet.locatecontrol": "^0.71.0",
+    "leaflet.markercluster": "^1.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +22,35 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "airbnb"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "jsx-a11y/label-has-associated-control": [
+        2,
+        {
+          "labelComponents": [
+            "label"
+          ],
+          "labelAttributes": [
+            "htmlFor"
+          ],
+          "controlComponents": [
+            "input"
+          ]
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -30,5 +63,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.1.0"
   }
 }
