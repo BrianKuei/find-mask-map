@@ -2,13 +2,17 @@ import React from 'react';
 
 import SideBar from '../../components/sidebar/sidebar.component';
 import Map from '../../components/map/map.component';
+import Footer from '../../components/footer/footer.component';
 
-import MainPageContainer from './main-page.styles';
+import { MainPageContainer, MapAndFooterContainer } from './main-page.styles';
 
 const MainPage = () => (
   <MainPageContainer>
     <SideBar />
-    <Map />
+    <MapAndFooterContainer>
+      <Map />
+      <Footer />
+    </MapAndFooterContainer>
   </MainPageContainer>
 );
 

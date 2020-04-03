@@ -23,6 +23,7 @@ const Navbar = () => {
             className={active.maskStatus ? 'active' : ''}
             onClick={addActiveClassHandler}
             data-item="maskStatus"
+            active={active.maskStatus}
           >
             口罩供給現況
 
@@ -33,6 +34,7 @@ const Navbar = () => {
             className={active.howToBuy ? 'active' : ''}
             onClick={addActiveClassHandler}
             data-item="howToBuy"
+            active={active.howToBuy}
           >
             口罩怎麼買
 

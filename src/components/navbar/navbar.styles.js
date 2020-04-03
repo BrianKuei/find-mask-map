@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import screenSize from '../../screen';
 
 export const NavBarContainer = styled.nav`
-  .active {
-    border-bottom: 3px solid;
-  }
-
   @media only screen and ${screenSize.mobileL} {
     width: 120%;
     margin: 10px -23px;
@@ -48,6 +44,21 @@ export const NavBarItem = styled.a`
   display: flex;
   justify-content: center;
   width: 82%;
+  position: relative;
+
+  ${(props) => (props.active ? `&::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background-color: #34495e;
+    height: 4px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }` : '')}
+  
 
   @media only screen and ${screenSize.mobileL} {
     width: 100%;

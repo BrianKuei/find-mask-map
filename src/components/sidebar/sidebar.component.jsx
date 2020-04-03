@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SideBarContainer } from './side.styled';
+import { SideBarContainer } from './sidebar.styled';
 
 const SideBar = () => (
   <SideBarContainer />
