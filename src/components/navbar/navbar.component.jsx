@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import {
   NavBarContainer, NavBarUl, NavBarLi, NavBarItem,
-} from './nav-bar.styles';
+} from './navbar.styles';
 
 const Navbar = () => {
   const [active, setActive] = useState({
@@ -12,11 +12,7 @@ const Navbar = () => {
   const addActiveClassHandler = (e) => {
     const { item } = e.target.dataset;
 
-    if (!active[item]) {
-      setActive({
-        [item]: !active[item],
-      });
-    }
+    return !active[item] ? setActive({ [item]: !active[item] }) : null;
   };
 
   return (
