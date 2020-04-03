@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { SideBarContainer } from './sidebar.styled';
+import { SideBarContainer, SearchAndParityDaysContainer, ShowPharmaciesInfoContainer } from './sidebar.styled';
 
 const SideBar = () => (
-  <SideBarContainer />
+  <SideBarContainer>
+    <SearchAndParityDaysContainer />
+    <ShowPharmaciesInfoContainer />
+  </SideBarContainer>
 );
 
 export default SideBar;

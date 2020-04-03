@@ -18,5 +18,9 @@ export const MainPageContainer = styled.main`
 export const MapAndFooterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+
+  @media only screen and ${screenSize.mobileL} {
+    width: 100%;
+  }
 `;
