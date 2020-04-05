@@ -12,7 +12,8 @@ export const FooterContainer = styled.footer`
     display: flex;
     justify-content: flex-start;
     background: #34495E;
-    padding: 32px 0 30px 24px;
+    padding: 13px 0 20px 24px;
+    height: 100%;
   }
 `;
 

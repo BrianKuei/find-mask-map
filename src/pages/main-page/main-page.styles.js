@@ -22,5 +22,6 @@ export const MapAndFooterContainer = styled.div`
 
   @media only screen and ${screenSize.mobileL} {
     width: 100%;
+    height: 15%;
   }
 `;

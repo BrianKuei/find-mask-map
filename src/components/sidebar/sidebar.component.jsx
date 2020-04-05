@@ -1,11 +1,36 @@
 import React from 'react';
 
-import { SideBarContainer, SearchAndParityDaysContainer, ShowPharmaciesInfoContainer } from './sidebar.styled';
+import SearchBarInput from '../search-bar-input/search-bar-input.component';
+import SearchBarButton from '../search-bar-button/search-bar-button.component';
+import ParityDays from '../parity-days/parity-days.component';
+import UpdateAndReforming from '../update-and-reforming/update-and-reforming.component';
+import PharmacyCard from '../pharmacy-card/pharmacy-card.component';
+
+import {
+  SideBarContainer,
+  SearchAndParityDaysContainer,
+  TextAndButtonContainer,
+  ShowPharmaciesInfoContainer,
+} from './sidebar.styled';
 
 const SideBar = () => (
   <SideBarContainer>
-    <SearchAndParityDaysContainer />
-    <ShowPharmaciesInfoContainer />
+    <SearchAndParityDaysContainer>
+      <TextAndButtonContainer>
+        <SearchBarInput />
+        <SearchBarButton />
+      </TextAndButtonContainer>
+      <ParityDays />
+      <UpdateAndReforming />
+    </SearchAndParityDaysContainer>
+    <ShowPharmaciesInfoContainer>
+      <PharmacyCard />
+      <PharmacyCard />
+      <PharmacyCard />
+      <PharmacyCard />
+      <PharmacyCard />
+      <PharmacyCard />
+    </ShowPharmaciesInfoContainer>
   </SideBarContainer>
 );
 

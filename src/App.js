@@ -6,7 +6,6 @@ import MainPageContainer from './pages/main-page/main-page.component';
 
 const App = () => {
   const [pharmaciesData, setPharmaciesData] = useState([]);
-  console.log(pharmaciesData);
 
 
   useEffect(() => {
@@ -16,6 +15,7 @@ const App = () => {
 
   return (
     <>
+      {console.log(pharmaciesData)}
       <Header />
       <MainPageContainer />
     </>
