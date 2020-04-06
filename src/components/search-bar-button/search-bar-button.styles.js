@@ -11,6 +11,7 @@ export const Button = styled.button`
   font-size: 16px;
   margin-left: 10px;
   width: 30%;
+  cursor: pointer;
 
   @media only screen and ${screenSize.mobileL} {
     display: none;

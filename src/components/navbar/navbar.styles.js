@@ -45,6 +45,7 @@ export const NavBarItem = styled.a`
   justify-content: center;
   width: 82%;
   position: relative;
+  cursor: pointer;
 
   ${(props) => (props.active ? `&::after{
     position: absolute;

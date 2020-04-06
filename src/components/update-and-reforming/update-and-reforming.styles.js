@@ -18,6 +18,7 @@ export const ReformingButton = styled.button`
   color: #34495E;
   border: 2px solid #34495E;
   border-radius: 20px;
+  cursor: pointer;
 
   &:hover {
     color: #fff;

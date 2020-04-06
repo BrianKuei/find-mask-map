@@ -15,7 +15,6 @@ const App = () => {
 
   return (
     <>
-      {console.log(pharmaciesData)}
       <Header />
       <MainPageContainer />
     </>

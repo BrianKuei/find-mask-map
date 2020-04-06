@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-
-import screenSize from '../../screen';
-
 const ParityDaysContainer = styled.div`
   display: flex;
   align-items: flex-end;
@@ -31,10 +28,6 @@ const ParityDaysContainer = styled.div`
       height: 100%;
       object-fit: contain;
     }
-  }
-  
-  @media only screen and ${screenSize.mobileL} {
-
   }
 `;
 
