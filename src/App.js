@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-function App() {
+import Header from './components/header/header.component';
+import MainPageContainer from './pages/main-page/main-page.component';
+
+const App = () => {
+  const [pharmaciesData, setPharmaciesData] = useState([]);
+
+
+  useEffect(() => {
+    axios.get('https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json?fbclid=IwAR3-IJR9MrE_O1WY4yAVi9zK70SWqYABEir5iyYadUz912GHxPfUtpM3j38')
+      .then((response) => setPharmaciesData(response.data.features));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <MainPageContainer />
+    </>
   );
-}
+};
 
 export default App;
